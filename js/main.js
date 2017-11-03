@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 	'use strict';
 
-    $("#testimonial-slider-1").owlCarousel({
+    $("#testimonial-slider-1, #testimonial-slider-2").owlCarousel({
         items:1,
         itemsDesktop:[1000,1],
         itemsDesktopSmall:[980,1],
@@ -23,6 +23,14 @@ jQuery(document).ready(function($) {
         navigation:false,
         slideSpeed:1000,
         autoPlay:true
+    });
+
+    $('#testimonial-slider-1').hide();
+    $('#sw').click();
+    
+    $('#sw').click(function(){
+      $('#testimonial-slider-1').toggle();
+      $('#testimonial-slider-2').toggle();
     });
 
     var cntForm = $("form#cntForm");

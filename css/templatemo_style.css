@@ -291,11 +291,24 @@ hr {
   display: block; 
   z-index: 99
 }
-#loading-image {
+.loading-image {
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 100
+} 
+
+.loading-image-2 {
+  color: #d5d5d5;
+  position: absolute;
+  top: 61%;
+  left: 43.5%;
+  z-index: 100;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 } 
 
 .main-menu ul li {
@@ -359,7 +372,7 @@ hr {
   top: 0;
   left: 0;
   z-index: 8;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.71);
   width: 100%;
   height: 100%;
 }
@@ -1461,3 +1474,82 @@ hr {
     position: absolute;
     bottom: 20px;
 }
+input[type="checkbox"].ios8-switch {
+    position: absolute;
+    margin: 0 auto 20px auto;    
+}
+input[type="checkbox"].ios8-switch + label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2.0em;
+}
+input[type="checkbox"].ios8-switch + label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 200px; /* x*5 */
+    height: 20px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #ff4242;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 200px; /* x*3 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch:checked + label:after {
+    margin-left: 150px;
+}
+input[type="checkbox"].ios8-switch:checked + label:before {
+    background: #ff4242;
+}
+
+input[type="checkbox"].ios8-switch-lg {
+    margin: 10px 0 0 10px;
+}
+input[type="checkbox"].ios8-switch-lg + label {
+    position: relative;
+    padding: 7px 0 0 60px;
+    line-height: 2.3em;
+    left: -65px;
+    top: -15px;
+}
+input[type="checkbox"].ios8-switch-lg + label:before {
+    width: 300px; /* x*5 */
+    height: 30px; /* x*3 */
+    border-radius: 20px; /* x*2 */
+}
+input[type="checkbox"].ios8-switch-lg + label:after {
+    width: 150px; /* x*3 */
+    height: 30px; /* x*3 */
+    border-radius: 20px; /* x*2 */
+}
+
+.cups, .shirt {
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  color: #fff;
+  left: -8px;
+  top: -2px;
+}
+
+.cups {
+  left: -88px;
+}
+
+#testimonial-slider-2 { display: none; }
