@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
         pagination:true,
         navigation:false,
         slideSpeed:1000,
-        autoPlay:true
+        autoPlay:false
     });
     $("#testimonial-slider").owlCarousel({
         items:3,
@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
         pagination:true,
         navigation:false,
         slideSpeed:1000,
-        autoPlay:true
+        autoPlay:false
     });
 
     $('#testimonial-slider-1').hide();
